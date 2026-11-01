@@ -1,38 +1,48 @@
 body {
-    background-color: #651FFF;
+    background-color: #D4C4A8;
+    font-family: 'Comic Sans MS', 'Crafty Girls', cursive, sans-serif;
 }
 
 h1 {
     text-align: center;
-    color: #39FF14;
-    font-family: "Nosifer", sans-serif;
+    color: #FFFFFF;
+    font-family: "Crafty Girls", cursive, sans-serif;
 }
 
 h2 {
     text-align: center;
-    font-family: "Nosifer", sans-serif;
-    color: #FF69B4;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    color: #5C3317;
 }
 
-/* Coming Soon Section Styling */
+
 #coming-soon h2 {
-    color: #39FF14;
-    font-family: "Nosifer", sans-serif;
+    color: #5C3317;
+    font-family: "Crafty Girls", cursive, sans-serif;
     text-align: center;
 }
 
 #coming-soon p {
     text-align: center;
-    color: #FF69B4;
-    font-size: 18px;
+    color: #F7F0A3;
 }
 
+
 ol {
-    color: #FF69B4;
+    background-image: url('Creepy baby.jpg');
+    background-repeat: repeat;
+    background-position: center;
+
+    /* Internal spacing & alignment */
+    padding: 30px 40px;
     width: min(700px, 90%);
     margin: 20px auto;
     text-align: left;
-    font-size: 18px;
+    color: #FFFFFF;
+
+
+    border: 8px dashed #5C3317;
+    border-radius: 15px;
 }
 
 ol li {
@@ -41,22 +51,20 @@ ol li {
 
 a:link, a:visited {
     text-decoration: none;
-    font-size: 28px;
-    color: #FF69B4;
-    font-family: "Nosifer", sans-serif;
+    color: #FFFFFF;
+    font-family: "Crafty Girls", "Comic Sans MS", cursive, sans-serif;
     display: table;
     margin: 0 auto;
 }
 
 p {
     text-align: center;
-    color: #FF69B4;
-    font-size: 18px;
+    color: #D49411;
     margin-left: 20px;
 }
 
 #one {
-    background-color: #39FF14;
+    background-color: #F7F0A3;
     width: min(700px, 90%);
     margin: 32px auto;
     border-style: dotted;
@@ -65,7 +73,7 @@ p {
 }
 
 #two {
-    background-color: #39FF14; 
+    background-color: #76552C;
     width: min(700px, 90%);
     height: auto;
     margin: 32px auto;
@@ -77,4 +85,55 @@ p {
 #two img {
     max-width: 100%;
     height: auto !important;
+}
+
+
+.font-crafty {
+    font-family: "Crafty Girls", cursive, sans-serif !important;
+}
+
+.font-comic {
+    font-family: "Comic Sans MS", "Comic Sans", cursive, sans-serif !important;
+}
+
+
+.font-size-tiny {
+    font-size: 9px !important;
+}
+
+.font-size-small {
+    font-size: 13px !important;
+}
+
+.font-size-medium {
+    font-size: 22px !important;
+}
+
+.font-size-large {
+    font-size: 34px !important;
+}
+
+.font-size-huge {
+    font-size: 48px !important;
+}
+
+.font-size-gigantic {
+    font-size: 64px !important;
+}
+
+.font-size-wild {
+    font-size: 11px !important;
+    letter-spacing: 4px;
+}
+
+.top-left-link {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    z-index: 9999;
+    background-color: #000000;
+    color: #39FF14 !important;
+    padding: 8px 12px;
+    border: 3px dashed #FF0055;
+    text-decoration: wavy underline #FFFF00;
 }
