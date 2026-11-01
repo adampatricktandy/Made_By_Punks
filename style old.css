@@ -1,0 +1,62 @@
+body {
+    background-color: #651FFF;
+}
+
+h1 {
+    text-align: center;
+    color: #39FF14;
+    font-family: "Nosifer", sans-serif;
+}
+
+h2 {
+   text-align: center;
+   font-family: "Nosifer", sans-serif;
+   color: #FF69B4
+}
+
+
+a:link, a:visited {
+  text-decoration: none;
+  font-size: 28px;
+  color: #FF69B4;
+  font-family: "Nosifer", sans-serif;
+  display: table;
+  margin: 0 auto;
+}
+
+
+p {
+    text-align: center;
+    color: #FF69B4;
+    font-size: 18px;
+    margin-left: 20px;
+}
+
+ol {
+    color: #FF69B4;
+    text-align: right;
+}
+
+#one {
+    background-color: #39FF14;
+    width: min(700px, 90%);
+    margin: 32px auto;
+    border-style: dotted;
+    border-color: black;
+    border-width: 10px;
+}
+
+#two {
+    background-color: #39FF14; 
+    width: min(700px, 90%);
+    height: auto;
+    margin: 32px auto;
+    border-style: dotted;
+    border-color: black;
+    border-width: 10px;
+}
+
+#two img {
+    max-width: 100%;
+    height: auto !important;
+}

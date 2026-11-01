@@ -1,4 +1,8 @@
 
+* {
+    box-sizing: border-box;
+}
+
 body {
     background-color: #000000;
     background-image: url('HELL\ LOGO.jpg'); 
@@ -7,15 +11,14 @@ body {
     color: #ff0055;
     font-family: 'Comic Sans MS', 'Crafty Girls', cursive, sans-serif;
     margin: 0;
-    padding: 40px 5px 2px 85px;
+    padding: 20px;
 }
-
 
 .chaotic-header {
     background-color: rgb(118, 85, 44);
     color: #00ff66;
     padding: 3px 80px 45px 12px;
-    margin-bottom: -25px;
+    margin-bottom: 25px;
     border-top: 12px double #ff00ff;
     border-right: 7px dashed #00ffff;
     border-bottom: 19px dotted #ffff00;
@@ -29,41 +32,47 @@ body {
     text-decoration: wavy underline red;
 }
 
+.top-hero-image-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 20px 0 30px 0;
+}
 
+.center-img {
+    width: 90%;
+    max-width: 650px;
+    height: auto;
+    display: block;
+    border: 8px dotted #000000;
+    transform: rotate(-2deg);
+}
 
 .three-column-container {
     display: flex;
     flex-direction: row;
-    align-items: flex-start;
+    width: 100%;
     gap: 15px;
-    margin-top: 50px;
+    align-items: flex-start;
 }
-
 
 .col-left {
     flex: 1;
-    background-color: #5C3317; 
+    background-color: #5C3317;
+    color: #FFFFFF;
     padding: 30px 15px;
     margin-top: 40px;
     border: 6px dashed #00ff00;
 }
 
 .col-middle {
-    flex: 2.5;
-    background-color: #F0DA38; 
+    flex: 1.5;
+    background-color: #F0DA38;
     padding: 20px;
     text-align: center;
     border-top: 14px groove #ff0055;
     border-bottom: 9px inset #0000ff;
     margin-top: 0px;
-}
-
-.center-img {
-    width: 95%;
-    max-width: 650px;
-    height: auto;
-    border: 8px dotted #000000;
-    transform: rotate(-2deg);
 }
 
 .img-caption {
@@ -73,17 +82,15 @@ body {
     margin-top: 15px;
 }
 
-/
 .col-right {
     flex: 1;
-    background-color: #000000; 
-    color: #00ff00;
+    background-color: #FFFFFF;
+    color: #ff0000;
     padding: 25px 15px;
     margin-top: -20px;
     border-left: 22px solid #ff9900;
     border-right: 4px dotted #ffffff;
 }
-
 
 .indent-disaster-1 {
     margin-left: -30px;
@@ -119,7 +126,6 @@ body {
     color: #00ffff;
 }
 
-
 .disaster-btn {
     background: repeating-linear-gradient(45deg, #ff0000, #ff0000 10px, #000000 10px, #000000 20px);
     color: #ffffff;
@@ -129,7 +135,6 @@ body {
     font-weight: bold;
     cursor: pointer;
 }
-
 
 .font-crafty {
     font-family: 'Crafty Girls', cursive, sans-serif !important;
