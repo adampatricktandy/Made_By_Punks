@@ -1,139 +1,202 @@
 body {
-    background-color: #D4C4A8;
-    font-family: 'Comic Sans MS', 'Crafty Girls', cursive, sans-serif;
+    background-color: #651FFF;
+    margin: 0;
+    padding: 0;
+}
+
+/* Sticky Navigation Bar */
+.navbar {
+    position: sticky;
+    top: 0;
+    background-color: #FF69B4; 
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 12px 0;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.navbar li a {
+    color: #39FF14; 
+    font-family: "Creepster", cursive;
+    font-size: 28px;
+    text-decoration: none;
+    display: inline-block;
+    margin: 0;
+}
+
+.navbar li a:hover {
+    color: #ffffff;
+}
+
+/* Fluid Container */
+.fluid-container {
+    width: min(90%, 1000px);
+    margin: 0 auto;
+    padding: 20px 0;
 }
 
 h1 {
     text-align: center;
-    color: #FFFFFF;
-    font-family: "Crafty Girls", cursive, sans-serif;
+    color: #39FF14;
+    font-family: "Nosifer", sans-serif;
+    margin-top: 20px;
+    font-size: clamp(2rem, 5vw, 3.5rem);
 }
 
 h2 {
     text-align: center;
-    font-family: "Comic Sans MS", cursive, sans-serif;
-    color: #5C3317;
+    font-family: "Nosifer", sans-serif;
+    color: #FF69B4;
+    font-size: clamp(1.2rem, 3vw, 2rem);
 }
 
-
+/* Coming Soon Section Styling */
 #coming-soon h2 {
-    color: #5C3317;
-    font-family: "Crafty Girls", cursive, sans-serif;
+    color: #39FF14;
+    font-family: "Nosifer", sans-serif;
     text-align: center;
 }
 
 #coming-soon p {
     text-align: center;
-    color: #F7F0A3;
+    color: #FF69B4;
+    font-size: 18px;
 }
 
-
 ol {
-    background-image: url('Creepy baby.jpg');
-    background-repeat: repeat;
-    background-position: center;
-
-    /* Internal spacing & alignment */
-    padding: 30px 40px;
+    color: #FF69B4;
     width: min(700px, 90%);
     margin: 20px auto;
     text-align: left;
-    color: #FFFFFF;
-
-
-    border: 8px dashed #5C3317;
-    border-radius: 15px;
+    font-size: 18px;
 }
 
 ol li {
     margin-bottom: 12px;
 }
 
-a:link, a:visited {
+/* Had to implement to stop nav bar interference */
+.main-link, .footer-link {
     text-decoration: none;
-    color: #FFFFFF;
-    font-family: "Crafty Girls", "Comic Sans MS", cursive, sans-serif;
+    font-size: 28px;
+    color: #FF69B4;
+    font-family: "Nosifer", sans-serif;
     display: table;
     margin: 0 auto;
 }
 
+.footer-link {
+    font-size: 18px;
+    display: inline;
+}
+
 p {
     text-align: center;
-    color: #D49411;
+    color: #FF69B4;
+    font-size: 18px;
     margin-left: 20px;
 }
 
 #one {
-    background-color: #F7F0A3;
+    color: #ff00bf; 
+    font-family: "Creepster", cursive;
+    font-size: 28px;
+    text-decoration: none;
+    background-color: #39FF14;
     width: min(700px, 90%);
     margin: 32px auto;
     border-style: dotted;
     border-color: black;
     border-width: 10px;
+    box-sizing: border-box;
+    padding: 20px;
 }
-
+/*Flexbox styling*/
 #two {
-    background-color: #76552C;
+    color: #ff00bf; 
+    font-family: "Creepster", cursive;
+    font-size: 28px;
+    text-decoration: none;
+    background-color: #39FF14; 
     width: min(700px, 90%);
-    height: auto;
     margin: 32px auto;
     border-style: dotted;
     border-color: black;
     border-width: 10px;
+    box-sizing: border-box;
+    padding: 20px;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+/*Gallery Item Styling For Scalable Images*/
+.gallery-item {
+    flex: 1 1 250px;
+    margin-bottom: 20px;
+    text-align: center;
 }
 
-#two img {
+.gallery-item img {
     max-width: 100%;
     height: auto !important;
+    display: block;
+    margin: 0 auto;
 }
 
-
-.font-crafty {
-    font-family: "Crafty Girls", cursive, sans-serif !important;
+#inspo {
+    color: #ff00bf; 
+    font-family: "Creepster", cursive;
+    text-align: center;
+    font-size: 28px;
+    text-decoration: none;
 }
 
-.font-comic {
-    font-family: "Comic Sans MS", "Comic Sans", cursive, sans-serif !important;
+#inspo a:link, #inspo a:visited {
+    color: #39FF14;
+    font-size: 36px;
+    text-decoration: none;
+    display: inline-block;
 }
 
-
-.font-size-tiny {
-    font-size: 9px !important;
+#inspo a:hover {
+    color: #ffffff;
 }
 
-.font-size-small {
-    font-size: 13px !important;
+/* Media Queries Test*/
+@media screen and (max-width: 768px) {
+    .navbar ul {
+        gap: 20px;
+    }
+
+    #one, #two, #coming-soon {
+        width: 95%;
+        padding: 15px;
+    }
 }
 
-.font-size-medium {
-    font-size: 22px !important;
-}
+@media screen and (max-width: 480px) {
+    .navbar ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
 
-.font-size-large {
-    font-size: 34px !important;
-}
+    h1 {
+        font-size: 2.2rem;
+    }
 
-.font-size-huge {
-    font-size: 48px !important;
-}
-
-.font-size-gigantic {
-    font-size: 64px !important;
-}
-
-.font-size-wild {
-    font-size: 11px !important;
-    letter-spacing: 4px;
-}
-
-.top-left-link {
-    position: fixed;
-    top: 10px;
-    left: 10px;
-    z-index: 9999;
-    background-color: #000000;
-    color: #39FF14 !important;
-    padding: 8px 12px;
-    border: 3px dashed #FF0055;
-    text-decoration: wavy underline #FFFF00;
+    .gallery-item {
+        flex: 1 1 100%;
+    }
 }
