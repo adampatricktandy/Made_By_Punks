@@ -106,6 +106,7 @@ p {
     margin-left: 20px;
 }
 
+/* Flexbox styling */
 #one {
     color: #ff00bf; 
     font-family: "Creepster", cursive;
@@ -120,28 +121,6 @@ p {
     box-sizing: border-box;
     padding: 20px;
 }
-
-/* Flexbox styling */
-#two {
-    color: #ff00bf; 
-    font-family: "Creepster", cursive;
-    font-size: 28px;
-    text-decoration: none;
-    background-color: #39FF14; 
-    width: min(700px, 90%);
-    margin: 32px auto;
-    border-style: dotted;
-    border-color: black;
-    border-width: 10px;
-    box-sizing: border-box;
-    padding: 20px;
-
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
-}
-
 
 .gallery-item {
     flex: 1 1 250px;
